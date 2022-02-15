@@ -1,53 +1,33 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, HostBinding, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'storybook-button',
-  template: ` <button
-    type="button"
-    (click)="onClick.emit($event)"
-    [ngClass]="classes"
-    [ngStyle]="{ 'background-color': backgroundColor }"
-  >
-    {{ label }}
-  </button>`,
-  styleUrls: ['./button.css'],
+  selector: 'app-button',
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss']
 })
-export default class ButtonComponent {
-  /**
-   * Is this the principal call to action on the page?
-   */
+export class ButtonComponent implements OnInit {
+
   @Input()
-  primary = false;
+  @HostBinding('attr.size') size = 'md';
 
-  /**
-   * What background color to use
-   */
   @Input()
-  backgroundColor?: string;
+  @HostBinding('attr.color') color = 'default';
 
-  /**
-   * How large should the button be?
-   */
   @Input()
-  size: 'small' | 'medium' | 'large' = 'medium';
+  @HostBinding('attr.variant') variant = '';
 
-  /**
-   * Button contents
-   *
-   * @required
-   */
   @Input()
-  label = 'Button';
+  @HostBinding('attr.disabled') disabled = false;
 
-  /**
-   * Optional click handler
-   */
-  @Output()
-  onClick = new EventEmitter<Event>();
+  @Input()
+  @HostBinding('attr.disableshadow') disableShadow = false;
 
-  public get classes(): string[] {
-    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  @Input() startIcon: string | undefined;
+  @Input() endIcon: string | undefined;
 
-    return ['storybook-button', `storybook-button--${this.size}`, mode];
+  constructor() { }
+
+  ngOnInit(): void {
   }
+
 }

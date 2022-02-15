@@ -13,6 +13,15 @@ export class ButtonComponent implements OnInit {
   @Input()
   @HostBinding('attr.color') color = 'default';
 
+  @Input()
+  @HostBinding('attr.variant') variant = '';
+
+  @Input()
+  @HostBinding('attr.disabled') disabled = false;
+
+  @Input()
+  @HostBinding('attr.disableshadow') disableShadow = false;
+
   @Input() startIcon: string | undefined;
   @Input() endIcon: string | undefined;
 
