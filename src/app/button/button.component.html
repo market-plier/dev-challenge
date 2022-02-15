@@ -1,0 +1,4 @@
+<span *ngIf="startIcon" class="left-icon md-16 material-icons">{{ startIcon }}</span>
+<div #ref><ng-content></ng-content></div>
+<span *ngIf="ref.childNodes.length == 0">Default</span>
+<span *ngIf="endIcon" class="right-icon md-16 material-icons">{{ endIcon }}</span>
