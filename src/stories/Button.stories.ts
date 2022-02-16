@@ -58,7 +58,7 @@ VariantOutline.args = {
 }
 
 export const VariantText = Template.bind({});
-VariantOutline.args = {
+VariantText.args = {
   size: 'md',
   variant: 'text',
   disabled: false,
@@ -66,7 +66,7 @@ VariantOutline.args = {
 }
 
 export const ButtonDisableShadow = Template.bind({});
-VariantOutline.args = {
+ButtonDisableShadow.args = {
   size: 'md',
   color: 'primary',
   disabled: false,
@@ -74,20 +74,20 @@ VariantOutline.args = {
 }
 
 export const ButtonDisabled = Template.bind({});
-VariantOutline.args = {
+ButtonDisabled.args = {
   size: 'md',
   disabled: true,
 }
 
 export const ButtonDisabledVariantText = Template.bind({});
-VariantOutline.args = {
+ButtonDisabledVariantText.args = {
   size: 'md',
   variant: 'text',
   disabled: true,
 }
 
 export const ButtonStartIcon = Template.bind({});
-VariantOutline.args = {
+ButtonStartIcon.args = {
   size: 'md',
   color: 'primary',
   startIcon: 'local_grocery_store',
@@ -96,7 +96,7 @@ VariantOutline.args = {
 }
 
 export const ButtonEndIcon = Template.bind({});
-VariantOutline.args = {
+ButtonEndIcon.args = {
   size: 'md',
   color: 'primary',
   endIcon: 'local_grocery_store',
@@ -105,7 +105,7 @@ VariantOutline.args = {
 }
 
 export const ButtonSmall = Template.bind({});
-VariantOutline.args = {
+ButtonSmall.args = {
   size: 'sm',
   color: 'primary',
   disabled: false,
@@ -113,7 +113,7 @@ VariantOutline.args = {
 }
 
 export const ButtonMedium = Template.bind({});
-VariantOutline.args = {
+ButtonMedium.args = {
   size: 'md',
   color: 'primary',
   disabled: false,
@@ -121,7 +121,7 @@ VariantOutline.args = {
 }
 
 export const ButtonLarge = Template.bind({});
-VariantOutline.args = {
+ButtonLarge.args = {
   size: 'lg',
   color: 'primary',
   disabled: false,
@@ -129,7 +129,7 @@ VariantOutline.args = {
 }
 
 export const ButtonDefaultColor = Template.bind({});
-VariantOutline.args = {
+ButtonDefaultColor.args = {
   size: 'md',
   color: 'default',
   disabled: false,
@@ -137,7 +137,7 @@ VariantOutline.args = {
 }
 
 export const ButtonPrimaryColor = Template.bind({});
-VariantOutline.args = {
+ButtonPrimaryColor.args = {
   size: 'md',
   color: 'primary',
   disabled: false,
@@ -145,7 +145,7 @@ VariantOutline.args = {
 }
 
 export const ButtonSecondaryColor = Template.bind({});
-VariantOutline.args = {
+ButtonSecondaryColor.args = {
   size: 'md',
   color: 'secondary',
   disabled: false,
@@ -153,7 +153,7 @@ VariantOutline.args = {
 }
 
 export const ButtonDangerColor = Template.bind({});
-VariantOutline.args = {
+ButtonDangerColor.args = {
   size: 'md',
   color: 'danger',
   disabled: false,
